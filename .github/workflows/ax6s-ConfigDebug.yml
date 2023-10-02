@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: RedMi-AX6S_immortalwrtARM
+name: RedMi-AX6S_ConfigDebug
 
 on:
   repository_dispatch:
