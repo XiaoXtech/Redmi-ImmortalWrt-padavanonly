@@ -16,8 +16,8 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: true
-        default: 'true'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrtARM
@@ -26,12 +26,12 @@ env:
   CONFIG_FILE: immortalwrtARM/ax6s/ax6s.config
   DIY_P1_SH: immortalwrtARM/ax6s/diy1.sh
   DIY_P2_SH: immortalwrtARM/ax6s/diy2.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: true
+  UPLOAD_WETRANSFER: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
 jobs:
