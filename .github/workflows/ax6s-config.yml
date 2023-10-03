@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: RedMi-AX6S_pure
+name: RedMi-AX6S_config
 on:
   repository_dispatch:
   workflow_dispatch:
