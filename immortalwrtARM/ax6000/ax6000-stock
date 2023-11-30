@@ -46,7 +46,7 @@ CONFIG_TARGET_mediatek=y
 # CONFIG_TARGET_mediatek_mt7629 is not set
 CONFIG_TARGET_mediatek_mt7986=y
 # CONFIG_TARGET_mediatek_mt7981 is not set
-CONFIG_TARGET_MULTI_PROFILE=y
+# CONFIG_TARGET_MULTI_PROFILE is not set
 # CONFIG_TARGET_mediatek_mt7986_Default is not set
 # CONFIG_TARGET_mediatek_mt7986_DEVICE_mt7986a-ax6000-spim-nor-rfb is not set
 # CONFIG_TARGET_mediatek_mt7986_DEVICE_mt7986a-ax6000-spim-nand-rfb is not set
