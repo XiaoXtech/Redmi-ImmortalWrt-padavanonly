@@ -84,8 +84,8 @@ jobs:
         mkdir bin
         make defconfig
         cp .config bin/def.config
-        make savedefconfig
-        cp defconfig bin/savedef.config
+      #  make savedefconfig
+      #  cp defconfig bin/savedef.config
         
     - name: Check space usage
       if: (!cancelled())
