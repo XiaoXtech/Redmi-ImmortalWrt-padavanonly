@@ -81,6 +81,7 @@ jobs:
       id: package
       run: |
         cd openwrt
+        mkdir bin
         make defconfig
         cp .config bin/def.config
         make savedefconfig
