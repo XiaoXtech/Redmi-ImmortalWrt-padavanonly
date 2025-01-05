@@ -24,6 +24,7 @@ env:
   DIY_P1_SH: immortalwrtARM/ax6000/diy1.sh
   DIY_P2_SH: immortalwrtARM/ax6000/diy2.sh
   UPLOAD_BIN_DIR: false
+  UPLOAD_CONFIG: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
@@ -108,7 +109,22 @@ jobs:
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
+        
+    - name: Save config
+      id: save
+      if: env.UPLOAD_CONFIG == 'true' && !cancelled()
+      run: |
+        cd openwrt
+        mkdir saveconf
+        cp .config saveconf/def.config
 
+    - name: Upload saveconf directory
+      uses: actions/upload-artifact@main
+      if: env.UPLOAD_CONFIG == 'true'
+      with:
+        name: OpenWrt_saveconf${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/saveconf
+        
     - name: Organize files
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
