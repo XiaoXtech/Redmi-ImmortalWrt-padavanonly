@@ -82,10 +82,8 @@ jobs:
       run: |
         cd openwrt
         mkdir bin
-        make savedefconfig
-        cp defconfig bin/savedef.config
-#        make defconfig
-#        cp .config bin/def.config
+        make defconfig
+        cp .config bin/def.config
         
     - name: Check space usage
       if: (!cancelled())
