@@ -10,14 +10,14 @@
 # See /LICENSE for more information.
 #
 
-name: Redmi-AX6000-stock
+name: Redmi-AX6000-stock-immortalwrt
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-23.05
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: immortalwrtARM/ax6000/ax6000-stock-23.05.config
