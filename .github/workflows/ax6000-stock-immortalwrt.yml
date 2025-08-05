@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: immortalwrtARM/ax6000/ax6000-stock-24.10.config
+  CONFIG_FILE: immortalwrtARM/ax6000/ax6000-stock-24.10-6.6.config
   DIY_P1_SH: immortalwrtARM/ax6000/diy1.sh
   DIY_P2_SH: immortalwrtARM/ax6000/diy2.sh
   UPLOAD_BIN_DIR: true
