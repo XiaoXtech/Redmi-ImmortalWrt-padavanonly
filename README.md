@@ -19,7 +19,7 @@ Lean源码只支持uboot固件。
 ## Redmi AX6000 闭源驱动固件 源码来源
 - padavanonly-[padavanonly/immortalwrtARM](https://github.com/padavanonly/immortalwrt-mt798x-6.6).
 ```bash
-git clone -b openwrt-24.10-6.6 --single-branch --filter=blob:none https://github.com/padavanonly/immortalwrt-mt798x-24.10 immortalwrt-mt798x-24.10
+git clone -b openwrt-24.10-6.6 --single-branch https://github.com/padavanonly/immortalwrt-mt798x-24.10
 ```
 - hanwckf-[hanwckf/immortalwrt-mt798x](https://github.com/hanwckf/immortalwrt-mt798x).
 ```bash
@@ -45,4 +45,5 @@ git clone https://github.com/x-wrt/x-wrt
 
 ## Redmi AX6000 不死ubootmod
 - HZFrodo-[HZFrodo/uboot-mediatek: add support for Xiaomi Redmi Router AX6000](https://github.com/openwrt/openwrt/commit/1613e3340b829ea9aa6da954bf0ff98214b71751).
+
 
