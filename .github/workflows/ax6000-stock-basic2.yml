@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Redmi-AX6000-stock-padavanonly
+name: ax6000-stock-basic2
 
 on:
   repository_dispatch:
