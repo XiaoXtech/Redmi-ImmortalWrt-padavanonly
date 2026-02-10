@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############改名字##############
-name: Redmi-AX6000-stock_23d05
+name: ax6000-stock-basic1
 on:
   repository_dispatch:
   workflow_dispatch:
